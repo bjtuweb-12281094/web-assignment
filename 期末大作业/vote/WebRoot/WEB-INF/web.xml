@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+<filter> 
+    <filter-name>charEncoding</filter-name>
+    <filter-class>filter.EncodingFilter</filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>GBK</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+        <filter-name>charEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>
